@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border= 1>
+    <thead>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Address</td>
+    <td>Email</td>
+    <td>Mobile</td>
+    <td>Designation</td>
+    </thead>
+    {% for row in rows%}
+    <tr>
+        <td>{{row['fname']}}</td>
+        <td>{{row['lname']}}</td>
+        <td>{{row['address']}}</td>
+        <td>{{row['email']}}</td>
+        <td>{{row['mobile']}}</td>
+        <td>{{row['designation']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<h2><a href="\">Go Back to Home Page </a> </h2>
+</body>
+</html>

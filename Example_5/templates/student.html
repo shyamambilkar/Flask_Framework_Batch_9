@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{{url_for('addrec')}}" method="POST">
+    <h1> Student Information System Application</h1>
+    <label>First Name</label>
+    <input type="text" name="fname"/>
+    <br><br>
+    <label>Last Name</label>
+    <input type="text" name="lname"/>
+    <br><br>
+    <label>Address</label>
+    <textarea name="address"></textarea>
+    <br><br>
+    <label>Email ID</label>
+    <input type="text" name="email"/>
+    <br><br>
+    <label>Contact Number</label>
+    <input type="text" name="mobile"/>
+    <br><br>
+    <label>Designation</label>
+    <input type="text" name="designation"/>
+    <br><br>
+    <input type="submit" value="Submit"/>
+    <br><br>
+    <h2><a href="\">Go Back to Home Page </a> </h2>
+</form>
+</body>
+</html>
